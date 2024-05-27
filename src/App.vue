@@ -42,7 +42,7 @@ const foodData = ref(null);
 const fetchFood = async () => {
   try {
     const response = await fetch(
-      `http://api.sanbei101.top/?category=${selectedCategory.value}`
+      `https://api.sanbei101.top/?category=${selectedCategory.value}`
     );
     const data = await response.json();
     foodData.value = data;

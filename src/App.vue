@@ -33,8 +33,6 @@
 
 <script setup>
 import { ref } from "vue";
-import { ElMessage } from "element-plus";
-
 const categories = ref(["早餐", "主食", "小吃", "饮品"]);
 const selectedCategory = ref("早餐");
 const foodData = ref(null);

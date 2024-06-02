@@ -47,6 +47,7 @@ const fetchFood = async () => {
     const data = await response.json();
     foodData.value = data;
     ElMessage.success("我要吃!");
+    gtag("event", "fetch_food_clicked");
   } catch (error) {
     ElMessage.error("吃的太多了,吃不动了!");
   }

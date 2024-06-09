@@ -40,7 +40,7 @@ const foodData = ref(null);
 const fetchFood = async () => {
   try {
     const response = await fetch(
-      `https://api.sanbei101.top/?category=${selectedCategory.value}`
+      `https://go-food-test-dptouemigi.cn-beijing.fcapp.run/?category=${selectedCategory.value}`
     );
     const data = await response.json();
     foodData.value = data;
